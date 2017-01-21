@@ -16,6 +16,7 @@ var xmlDoc= xhttp.responseXML;
    parser = new DOMParser();
 xmlDoc = parser.parseFromString(xhttp.responseTEXT,"text/xml");
   alert('0,4');
+ document.write=(xmlDoc);
  document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
   alert('0,5');
 
