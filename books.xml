@@ -6,7 +6,7 @@
        <year>2005</year> 
        <price>30.00</price> </book> 
    <book> 
-       <title>Harry Potter</title> 
+       <titulo>Harry Potter</titulo> 
        <author>J K. Rowling</author> 
        <year>2005</year> 
        <price>29.99</price> </book> 
