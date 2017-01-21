@@ -14,6 +14,7 @@ xhttp.open("GET", "books.xml",false);
 xhttp.send();
   alert('0,3');
  xmlDoc= xhttp.responseText;
+ document.write(xmlDoc);
   alert('0,4');
 
  document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
