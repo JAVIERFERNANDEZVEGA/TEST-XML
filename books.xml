@@ -23,5 +23,5 @@
        <title>Learning XML</title> 
        <author>Erik T. Ray</author> 
        <year>2003</year> 
-       <price>39.95</price> </book> 
+       <price>39.9512345678</price> </book> 
 </bookstore>
