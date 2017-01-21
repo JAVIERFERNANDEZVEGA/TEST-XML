@@ -9,9 +9,13 @@ var xhttp = new XMLHttpRequest();
  alert('0,1');
 
 xhttp.open("GET", "books.xml",false);
+  alert('0,2');
 xhttp.send();
+  alert('0,3');
 var xmlDoc = xhttp.responseText;
+  alert('0,4');
  document.write(xmldoc);
+  alert('0,5');
 function myFunction(xml) {
     
     document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
