@@ -12,11 +12,12 @@ xhttp.open("GET", "books.xml",false);
   alert('0,2');
 xhttp.send();
   alert('0,3');
-var xmlDoc = xhttp.responseText;
+
+   parser = new DOMParser();
+xmlDoc = parser.parseFromString(xhttp.responseXML,"text/xml");
   alert('0,4');
- /*document.write (xmlDoc);*/
-  alert('0,5');
-function myFunction(xml) {
+ 
+ function myFunction(xml) {
     
     document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 }
