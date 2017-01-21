@@ -6,17 +6,16 @@
 
 <script>
 var xhttp = new XMLHttpRequest();
+ var parser, xmlDoc;
  alert('0,1');
 
 xhttp.open("GET", "books.xml",false);
   alert('0,2');
 xhttp.send();
   alert('0,3');
-var xmlDoc= xhttp.responseXML;
-   parser = new DOMParser();
-xmlDoc = parser.parseFromString(xhttp.responseTEXT,"text/xml");
+ xmlDoc= xml.responseXML;
   alert('0,4');
- document.write=(xmlDoc);
+
  document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
   alert('0,5');
 
