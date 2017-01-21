@@ -13,7 +13,7 @@ xhttp.open("GET", "books.xml",false);
   alert('0,2');
 xhttp.send();
   alert('0,3');
- xmlDoc= xml.responseXML;
+ xmlDoc= xhttp.responseXML;
   alert('0,4');
 
  document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
